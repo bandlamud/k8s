@@ -3,6 +3,6 @@ kind: Pod
 metadata:
   name: error-image
 spec:
-  containerPort:
+  containers:
   - name: nginx
     image: mhixga
