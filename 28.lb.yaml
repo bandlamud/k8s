@@ -3,10 +3,10 @@ kind: Pod
 metadata:
   name: loadbalancer
   labels:
-  project: roboshop
-  component: service
-  environment: dev
-  purpose: loadbalancer
+    project: roboshop
+    component: service
+    environment: dev
+    purpose: loadbalancer
 spec:
   containers:
   - name: nginx
