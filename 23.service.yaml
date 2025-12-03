@@ -1,0 +1,13 @@
+apiVersion: v1 
+kind: Service
+metadata:
+  name: service-demo
+spec:
+  selector:
+    project: roboshop
+    component: service
+    environment: dev 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
