@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: annotation
-  annotation:
+  annotations:
     jenkis: jenkins.joindevops.com
 spec:
   containers:
