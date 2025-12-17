@@ -1,0 +1,12 @@
+apiVersion: v1 
+kind: Pod
+metadata: 
+  name: lmalinux
+  labels:
+    project: roboshop
+    component: frontend
+    environment: dev
+spec:
+  containers:
+   - name: almalinux
+     image: almalinux:9
