@@ -21,17 +21,3 @@ spec:
       containers:
       - name: nginx
         image: nginx:trixie-perl
----
-# Service
-apiVersion: v1
-kind: Service
-metadata:
-  name: 
-spec:
-  selector:
-    purpose: headless-svc-demo
-    project: roboshop
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
