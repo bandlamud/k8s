@@ -1,3 +1,4 @@
+# PV
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -13,3 +14,16 @@ spec:
   csi:
     driver: efs.csi.aws.com
     volumeHandle: fs-0f5a4f1297e7a5b1f
+---
+# PVC
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: efs-static
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: ""
+  resources:
+    requests:
+      storage: 5Gi
