@@ -61,7 +61,7 @@ spec:
       name: www
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "roboshop-efs"
+      storageClassName: "roboshop-ebs"
       resources:
         requests:
           storage: 1Gi
