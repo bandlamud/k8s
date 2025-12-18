@@ -17,7 +17,7 @@ kind: Pod
 metadata:
   name: nginx
   labels:
-  purpose: roboshop-efs
+    purpose: roboshop-efs
 spec:
   containers:
     - name: nginx
