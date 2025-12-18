@@ -1,0 +1,12 @@
+# PVC and PV
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: efs-dynamic
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: roboshop-efs
+  resources:
+    requests:
+      storage: 5Gi
